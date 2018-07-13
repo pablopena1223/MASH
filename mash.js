@@ -1,5 +1,5 @@
 function mash(){
-    return "You will live in a " + getHome() + ", and you will have " + getChildrenCount() + " kids!";
+    return "You will live in a " + getHome() + ", and you will have " + getChildrenCount() + " kids!" + " and you'll drive a " + getCar() ;
 
 }
 
@@ -8,8 +8,8 @@ console.log(mash());
 
 function getHome(){
     const places = ["Mansion","Apartment","Shack","House"];
-    const randomValue = Math.floor(Math.random() * places.length);
-    return places[randomValue];
+    const randomPlace = Math.floor(Math.random() * places.length);
+    return places[randomPlace];
 }
 
 console.log(getHome());
@@ -22,3 +22,9 @@ function getChildrenCount(){
 }
 
 console.log(getChildrenCount());
+
+function getCar(){
+    const cars = ["Lambo","Box with wheels","Unicycle","Trash can"];
+    const randomCar = Math.floor(Math.random() * cars.length);
+    return cars[randomCar];
+}
