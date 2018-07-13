@@ -1,5 +1,5 @@
 function mash(){
-    return getHome();
+    return "You will live in a " + getHome() + ", and you will have " + getChildrenCount() + " kids!";
 
 }
 
@@ -13,3 +13,12 @@ function getHome(){
 }
 
 console.log(getHome());
+
+function getChildrenCount(){
+   const decimal = Math.random();
+   const times100 = decimal * 100; 
+   const final = Math.floor(times100);
+   return(final);
+}
+
+console.log(getChildrenCount());
